@@ -1,0 +1,23 @@
+import tkinter as tk
+
+canvas = tk.Tk()
+button_width = 8
+#create a label
+instruction_label = tk.Label(canvas,text="Press a button")
+instruction_label.grid()
+#create a button
+coke_button = tk.Button(canvas,text="Coke\n$2.50",bg="green",fg="white",width=button_width)
+coke_button.grid(row=1,column=0,sticky="w")
+pepsi_button = tk.Button(canvas,text="Pepsi\n2.75",bg="green",fg="white",width=button_width)
+pepsi_button.grid(row=1,column=1,sticky="w")
+water_button = tk.Button(canvas,text="Water\n2.75",bg="green",fg="white",width=button_width)
+water_button.grid(row=1,column=2,sticky="w")
+kitkat_button = tk.Button(canvas,text="KitKat\n2.50",bg="green",fg="white",width=button_width)
+kitkat_button.grid(row=2,column=0,sticky="w")
+doritos_button = tk.Button(canvas,text="Doritos\n2.10",bg="green",fg="white",width=button_width)
+doritos_button.grid(row=2,column=1,sticky="w")
+lays_button = tk.Button(canvas,text="Lays\n2.75",bg="green",fg="white",width=button_width)
+lays_button.grid(row=2,column=2,sticky="w")
+#last step
+
+canvas.mainloop()
